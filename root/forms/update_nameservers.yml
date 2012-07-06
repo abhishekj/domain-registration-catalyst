@@ -1,0 +1,57 @@
+---
+# indicator is the field that is used to test for form submission
+indicator: submit
+# Start listing the form elements
+elements:
+    - type: Hidden
+      name: did
+      
+    # Another text field for the numeric rating
+    - type: Text
+      name: ns1
+      label: Nameserver 1
+      attributes:
+        title: Enter NS 1 
+      # Use Filter to clean up the input data
+      # Could use 'NonNumeric' below, but since Filters apply *before*
+      # constraints, it would conflict with the 'Integer' constraint below.
+      # So let's skip this and just use the constraint.
+      #filter:
+        # Remove everything except digits
+        #- NonNumeric
+      # Add constraints to the field
+      
+    - type: Text
+      name: ns2
+      label: Nameserver 2
+      attributes:
+        title: Enter NS 2
+      # Use Filter to clean up the input data
+      # Could use 'NonNumeric' below, but since Filters apply *before*
+      # constraints, it would conflict with the 'Integer' constraint below.
+      # So let's skip this and just use the constraint.
+      #filter:
+        # Remove everything except digits
+        #- NonNumeric
+      # Add constraints to the field
+
+    # The submit button
+    - type: Submit
+      name: submit
+      value: Submit
+      container_attributes:
+         class: label
+      attributes:
+         class: btn btn-warning btn-large
+
+# Global filters and constraints.
+constraints:
+    # The user cannot leave any fields blank
+    - Required
+    # If not all fields are required, move the Required constraint to the
+    # fields that are
+filter:
+    # Remove whitespace at both ends
+    - TrimEdges
+    # Escape HTML characters for safety
+    - HTMLEscape

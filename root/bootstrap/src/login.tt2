@@ -1,0 +1,52 @@
+<style>
+.label {
+	background-color: #c2c2c2;
+}
+</style>
+<div class="span4">
+
+	<div class="row">
+		<h2>Fill form below to [% IF c.action == 'login' %] Login [% ELSE
+			%] Register [% END %]</h2>
+	</div>
+	<!-- 
+	<div class="row">
+		Register Via
+		<button
+			onclick="document.getElementById('showfbform').style.display='block';"
+			name="submit" type="button" class="btn btn-info btn-mini">FaceBook</button>
+		<div id="showfbform" style="display: none;">
+			<iframe
+				src="https://www.facebook.com/plugins/registration?
+             client_id=192081760908663&redirect_uri=[% c.uri_for('/fbregister') %]&fields=name,email"
+				scrolling="auto" frameborder="no" style="border: none"
+				allowTransparency="true" width="100%" height="330"> </iframe>
+		</div>
+	</div>
+	 -->
+	<div class="row well">
+		<blockquote>[% error_message %] [% form %]</blockquote>
+	</div>
+</div>
+
+<div class="span2 well">
+	<div class="row" style="padding-left: 12px;">
+		<h1>What you get for Free</h1>
+	</div>
+	<div class="row">&nbsp;</div>
+
+	<blockquote>
+		<ul>
+			<li>Free Hosting</li>
+			<li>10 Email Accounts powered by Google</li>
+			<li>Domain Forwarding</li>
+			<li>Privacy Protection</li>
+			<li>Mail Forwarding</li>
+			<li>URL Masking</li>
+			<li>DNS Management</li>
+			<li>Domain Theft Protection</li>
+			<li>Easy-to-use Control Panel</li>
+		</ul>
+	</blockquote>
+
+</div>

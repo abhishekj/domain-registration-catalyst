@@ -1,0 +1,36 @@
+<div class="row">
+<h2>Domain Pricing: Currency USD</h2>
+</div>
+<div class="row ">
+<blockquote>
+
+        <table class="table table-striped">
+    <thead>
+    <tr>
+    <th>Domains</th>
+    <th>New Registrations</th>
+    <th>Transfers</th>
+    <th>Renewals</th>
+    </tr>
+    </thead>
+    <tbody>
+					[% FOREACH tlds IN c.config.tlds %]
+					        <tr>
+			      <td>.[% tlds.key %]</td>
+                  <td> $ [% c.config.tlds.${tlds.key}.newreg %]</td>
+                  <td>$ [% c.config.tlds.${tlds.key}.renewal %]</td>
+                  <td>$ [% c.config.tlds.${tlds.key}.transfer %]</td>
+                </tr>
+
+                [% END %]
+
+                
+			</tbody>	
+              </table>
+
+				
+
+</blockquote>
+</div>
+             
+

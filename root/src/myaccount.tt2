@@ -1,0 +1,45 @@
+ <div id="main-content-container">
+  <div id="main-content-container-wapper">
+    <div id="content-container">
+      <div id="content-text-sub-container">
+
+    <table width="694" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="694" height="250" align="left" valign="top">
+               <table width="694" border="0" cellpadding="0" cellspacing="0" bgcolor="#e5e5e5" class="brdr-all">
+                <tr>
+                  <td width="150" height="35" class="sub-tbl-inside"><div align="left">Domains</div></td>
+                   <td width="150" height="35" class="sub-tbl-inside"><div align="left">Name Servers</div></td>
+                  <td width="40" height="35" class="sub-tbl-inside"><div align="left">Expiry</div></td>
+                  <td width="54" height="35" class="sub-tbl-inside" nowrap><div align="left">Renew years</div></td>
+                  <td width="100" height="35" class="sub-tbl-inside"><div align="left">Renew</div></td>
+                </tr>
+
+				[% FOREACH domain IN domains %]
+				<form action="/renew" method="post">
+                <tr>
+                  <td width="150" height="30" class="paddL"><div align="left">[% domain.d_domain %]</div></td>
+                  <td width="150" height="30" class="paddL"><div align="left"><a href="update_nameservers?did=[% domain.d_id %]">Edit</a></div></td>
+                  <td width="40" height="30" class="paddL"><div align="left">[% domain.d_expires_on %]</div></td>
+                  <td width="54" height="30" class="paddL">
+                  <select name="years">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  </select></div></td>
+                  <td width="100" height="30" class="paddL"><div align="left"><input type="hidden" name="did" value="[% domain.d_id %]" >
+                  <input type="hidden" name="domain" value="[% domain.d_domain %]" >
+                  <input type="hidden" name="expdate" value="[% domain.d_expires_on %]" >
+                  <input type="submit" value="Renew" name="renew" onclick="alert('Please Contact Admin for Renewal');return true;"></div>
+                  </td>
+                </tr>
+                </form>
+				[% END %]
+              </table></td>
+          </tr>
+          <tr>
+            <td width="694" height="30"><div align="right"><!--Pagination or Other Linked Content--></div></td>
+          </tr>
+        </table>
+        </div>       

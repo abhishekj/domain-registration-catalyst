@@ -1,0 +1,27 @@
+<div  class="row"><h3>My Account</h3></div>
+<div  class="row">
+<img src="static/images/asterisk_orange.png" alt="" width="16" height="16" />
+ 
+<a href="/" class="NavLinks">Search domain</a>
+</div><div  class="row">
+<img src="static/images/coins_add.png" width="16" height="16" />
+            <a href="add_funds" class="NavLinks">Pay in Advance</a>
+</div><div  class="row">
+<img src="static/images/cog_go.png" width="16" height="16" />
+            <a href="myaccount" class="NavLinks">Manage Domains </a>
+</div><div  class="row">
+<img src="static/images/database_lightning.png" width="16" height="16" />
+            <a href="myaccount" class="NavLinks">My Hosting</a>
+</div><div  class="row">
+<img src="static/images/page_go.png" width="16" height="16" />
+<a href="myinvoices" class="NavLinks">Invoices </a>
+</div><div  class="row">
+<img src="static/images/basket_go.png" width="16" height="16" />
+            <a href="myhistory" class="NavLinks">Transactions </a>
+</div><div  class="row">
+<img src="static/images/vcard_add.png" alt="" width="16" height="16" />
+<a href="updateaccount" class="NavLinks">Update Account </a>
+</div><div  class="row">
+<img src="static/images/computer_delete.png" width="16" height="16" />
+<a href="logout" class="NavLinks">LOGOUT </a>
+</div>

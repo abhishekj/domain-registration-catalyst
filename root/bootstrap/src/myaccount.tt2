@@ -1,0 +1,46 @@
+<div class="row">
+<h2>My Account</h2>
+</div>
+<div class="row ">
+<blockquote>
+
+        <table class="table table-striped">
+    <thead>
+    <tr>
+    <th>Domains</th>
+    <th>Name Servers</th>
+    <th>Expiry</th>
+    <th>Renew Years</th>
+    <th>Renew</th>
+    </tr>
+    </thead>
+    <tbody>
+				[% FOREACH domain IN domains %]
+				<form action="/renew" method="post">    
+        <tr>
+    <td>[% domain.d_domain %]</td>
+    <td><a href="update_nameservers?did=[% domain.d_id %]">Edit</a></td>
+    <td>[% domain.d_expires_on %]</td>
+    <td><select name="years" class="input-small">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  </select></td>
+    <td><input type="hidden" name="did" value="[% domain.d_id %]" >
+                  <input type="hidden" name="domain" value="[% domain.d_domain %]" >
+                  <input type="hidden" name="expdate" value="[% domain.d_expires_on %]" >
+                  <input type="submit" value="Renew" name="renew" onclick="alert('Please Contact Admin for Renewal');return true;"></td>
+                  </td>
+                </tr>
+                </form>
+                
+				[% END %]
+			</tbody>	
+              </table>
+
+				
+
+</blockquote>
+</div>
+             

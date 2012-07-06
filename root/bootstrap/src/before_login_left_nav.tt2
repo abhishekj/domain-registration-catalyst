@@ -1,0 +1,29 @@
+<div class="row">
+	<h6>Search Domain Name</h6>
+</div>
+<span>
+	<form class="form" action="search" method="post">
+		<div class="row">
+			<input type="text" class="input-small" name="domain"
+				placeholder="Domain">
+
+		</div>
+		<div class="row">
+			<select name="ext" class="input-small"> [% FOREACH tlds IN
+				c.config.tlds %]
+				<option value="[% tlds.key %]">.[% tlds.key %]</option> [% END %]
+			</select>
+
+			<button type="submit" class="btn btn-warning btn-small" name="submit">Search</button>
+		</div>
+		
+		<div class="row">
+			<ul class="breadcrumb" >
+						[% FOREACH tlds IN c.config.tlds %]
+						<li><span class="label"">[% tlds.key %]</span><br />
+						<strong>$[% c.config.tlds.${tlds.key}.newreg %]</strong></li> 
+						[% END %]
+					</ul>
+		</div>
+	</form>
+</span>

@@ -1,0 +1,16 @@
+<style>
+.label{
+background-color: #c2c2c2;
+}
+</style>
+		<div class="row">
+<h2>Domain Search</h2>
+</div>
+<div class="row well">
+<blockquote>
+[% error_message %]
+[% form %]
+
+</blockquote>
+</div>
+		

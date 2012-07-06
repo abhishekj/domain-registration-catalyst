@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+.TabbedPanels {
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	clear: none;
+	width: 100%; 
+	height: 420px;
+}
+
+.TabbedPanelsTabGroup {
+	margin: 0px;
+	padding: 0px;
+}
+
+.TabbedPanelsTab {
+	position: relative;
+	top: 1px;
+	float: left;
+	padding: 8px 10px 2px;
+	margin: 0px 5px 0px 0px;
+	font: normal 12px sans-serif;
+	list-style: none;
+	border-left: 1px solid #b0b0b0;
+	border-bottom: 1px solid #b0b0b0;
+	border-top: 1px solid #b0b0b0;
+	border-right: 1px solid #b0b0b0;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	cursor: pointer;
+	height: 23px;
+	width: 125px;
+	text-align: center;
+	vertical-align: middle;
+	background: #DDD url(../images/sub-nav-bar.png) repeat-x left center;
+}
+
+
+.TabbedPanelsTabHover {
+	background-color: #CCC;
+}
+
+
+.TabbedPanelsTabSelected {
+	background-color: #EEE;
+	border-bottom: 1px solid #EEE;
+}
+
+
+.TabbedPanelsTab a {
+	color: black;
+	text-decoration: none;
+}
+
+
+.TabbedPanelsContentGroup {
+	clear: both;
+	border-left: 1px solid #b0b0b0;
+	border-bottom: 1px solid #b0b0b0;
+	border-top: 1px solid #b0b0b0;
+	border-right: 1px solid #b0b0b0;
+	background-color: #e5e5e5;
+	height: 420px;
+	width: 100%;
+}
+
+
+.TabbedPanelsContent {
+	padding: 10px;
+}
+
+
+.TabbedPanelsContentVisible {
+}
+
+
+.VTabbedPanels .TabbedPanelsTabGroup {
+	float: left;
+	width: 10em;
+	height: 20em;
+	background-color: #EEE;
+	position: relative;
+	border-top: solid 1px #b0b0b0;
+	border-right: solid 1px #b0b0b0;
+	border-left: solid 1px #CCC;
+	border-bottom: solid 1px #951621;
+}
+
+
+.VTabbedPanels .TabbedPanelsTab {
+	float: none;
+	margin: 0px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+
+
+.VTabbedPanels .TabbedPanelsTabSelected {
+	background-color: #EEE;
+	border-bottom: solid 1px #999;
+}
+
+
+.VTabbedPanels .TabbedPanelsContentGroup {
+	clear: none;
+	float: left;
+	padding: 0px;
+	width: 30em;
+	height: 20em;
+}

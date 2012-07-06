@@ -1,0 +1,48 @@
+<div id="content-navigation">
+        <table width="225" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="35" colspan="3" align="left" valign="top" class="sub-nav-tbl"><div align="left"><img src="static/images/my-account.png" width="100" height="34" /></div></td>
+          </tr>
+          <tr>
+            <td height="30" align="center" valign="middle">&nbsp;</td>
+            <td align="center" valign="middle"><div align="left"><img src="static/images/asterisk_orange.png" alt="" width="16" height="16" /></div></td>
+            <td height="30" align="left" valign="middle"><div align="left"><a href="/" class="NavLinks">Search domain</a></div></td>
+          </tr>
+          <tr>
+            <td width="10" height="30" align="center" valign="middle">&nbsp;</td>
+            <td width="30" align="center" valign="middle"><div align="left"><img src="static/images/coins_add.png" width="16" height="16" /></div></td>
+            <td width="185" height="30" align="left" valign="middle"><div align="left"><a href="add_funds" class="NavLinks">Pay in Advance</a></div></td>
+          </tr>
+          <tr>
+            <td width="10" height="30" align="center" valign="middle" class="sub-nav-form-caption">&nbsp;</td>
+            <td width="30" height="30" align="center" valign="middle"><div align="left"><img src="static/images/cog_go.png" width="16" height="16" /></div></td>
+            <td width="185" height="30" align="left" valign="middle">
+            <div align="left"><a href="myaccount" class="NavLinks">Manage Domains </a></div>            </td>
+          </tr>
+        <!--  <tr>
+            <td width="10" height="30" align="center" valign="middle">&nbsp;</td>
+            <td width="30" height="30" align="center" valign="middle"><div align="left"><img src="static/images/database_lightning.png" width="16" height="16" /></div></td>
+            <td width="185" height="30" align="left" valign="middle"><div align="left"><a href="myaccount" class="NavLinks">My Hosting</a></div></td>
+          </tr>
+          <tr>
+            <td width="10" height="30" align="center" valign="middle">&nbsp;</td>
+            <td width="30" height="30" align="center" valign="middle"><div align="left"><img src="static/images/page_go.png" width="16" height="16" /></div></td>
+            <td width="185" height="30" align="left" valign="middle"><div align="left"><a href="myinvoices" class="NavLinks">Invoices </a></div></td>
+          </tr>-->
+          <tr>
+            <td width="10" height="30" align="center" valign="middle">&nbsp;</td>
+            <td width="30" height="30" align="center" valign="middle"><div align="left"><img src="static/images/basket_go.png" width="16" height="16" /></div></td>
+            <td width="185" height="30" align="left" valign="middle"><div align="left"><a href="myhistory" class="NavLinks">Transactions </a></div></td>
+          </tr>
+          <tr>
+            <td height="30" align="center" valign="middle">&nbsp;</td>
+            <td height="30" align="center" valign="middle"><div align="left"><img src="static/images/vcard_add.png" alt="" width="16" height="16" /></div></td>
+            <td height="30" align="left" valign="middle"><div align="left"><a href="updateaccount" class="NavLinks">Update Account </a></div></td>
+          </tr>
+          <tr>
+            <td width="10" height="30" align="center" valign="middle">&nbsp;</td>
+            <td width="30" height="30" align="center" valign="middle"><div align="left"><img src="static/images/computer_delete.png" width="16" height="16" /></div></td>
+            <td width="185" height="30" align="left" valign="middle"><div align="left"><a href="logout" class="NavLinks">LOGOUT </a></div></td>
+          </tr>
+        </table>
+      </div>

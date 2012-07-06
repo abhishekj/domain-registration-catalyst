@@ -1,0 +1,113 @@
+<div>
+	<div class="row">
+		<div class="span12" style="color: #49AFCD; font-family: verdana">
+			<center>
+				<h1>Welcome to www.dedomart.com</h1>
+				<h1>Your Fastest Domain Registration Mart with FREE Hosting</h1>
+			</center>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="span6">
+
+			<div class="row">
+				<div class="span5">
+					<h2>Search for a domain name!</h2>
+				</div>
+			</div>
+			<div class="row ">
+				<div class="span5 well" style="background-color: #5BB75B;">
+					<form class="form-inline" action="search" method="POST">
+						<div class="input-prepend">
+							<span class="add-on">www.</span> <input type="text"
+								class="input-large" name="domain"
+								placeholder="Enter Domain to Search">
+						</div>
+						<select name="ext" class="input-small"> [% FOREACH tlds
+							IN c.config.tlds %]
+							<option value="[% tlds.key %]">.[% tlds.key %]</option> [% END %]
+						</select>
+
+						<button type="submit" class="btn btn-warning">Search</button>
+					</form>
+					
+				</div>
+			</div>
+			<div class="row">&nbsp;</div>
+			<div class="row ">
+				<div class="span5 well">
+				<em>Domain Names from 
+						USD 1.99<br>
+						</em>
+					<ul class="breadcrumb">
+						[% FOREACH tlds IN c.config.tlds %]
+						<li><span class="label"">[% tlds.key %]</span><br />
+						<strong>$[% c.config.tlds.${tlds.key}.newreg %]</strong></li> 
+						[% END %]
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="span3">
+		<div class="row ">
+		<img src="/static/images/domain.png" width="280px;">
+		</div>
+		</div>
+		<div class="span3">
+
+			<div class="row" style="font-family: cursive;">
+				<h2>BONUS!</h2>
+			</div>
+			<div class="row ">
+				<blockquote>
+					<ul>
+						<li>Free Hosting on each domain bought</li>
+						<li>10 Email Accounts powered by Google</li>
+						<li>Domain Forwarding</li>
+						<li>Privacy Protection</li>
+						<li>Mail Forwarding</li>
+						<li>URL Masking</li>
+						<li>DNS Management</li>
+						<li>Domain Theft Protection</li>
+						<li>Easy-to-use Control Panel</li>
+					</ul>
+				</blockquote>
+			</div>
+
+
+		</div>
+
+	</div>
+
+</div>
+<!-- new div -->
+[% INCLUDE testimonials_inner.tt2 %]
+
+<div class="row">
+	<div class="span12">
+		<div class="well" style="background-color: #d4d4d4;">
+			<p>A unique and popular online identity is something that can
+				fetch your business the global customers, expose your skills,
+				talents, services and products to the millions of Internet users and
+				can let you earn a respectable brand image.</p>
+			<p>DeDoMart, being one of the leading hosting service and server
+				solutions providers, offer you a wide array of various services &
+				solutions, such as cheap domain name registrations, Web hosting,
+				managed and unmanaged dedicated hosting, VPS and reseller hosting
+				packages, digital certificates, and various other server solutions.
+				We believe in walking an extra mile to present our customers with
+				services like free Web hosting, cheapest domain names, affordable
+				e-mail hosting and many more. What remains common across all our
+				offerings is, the cheapest prices for almost all the services and
+				the highest quality standards maintained throughout.</p>
+			<p>Our devotion to your online success is constantly exhibited by
+				various factors associated with us; the most competitive pricing,
+				exceptional after-sales services and support, innovative utilization
+				of cutting edge technologies, and a never-ending zeal to offer you
+				the best in the class services. DeDoMart continually strives to
+				offer you the best services at the cheapest prices to beat all the
+				budget constraints with the customers.</p>
+		</div>
+	</div>
+</div>

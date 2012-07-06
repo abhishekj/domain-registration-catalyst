@@ -1,0 +1,14 @@
+ <div id="main-content-container">
+  <div id="main-content-container-wapper">
+    <div id="content-container">
+      <div id="content-text-sub-container">
+
+Result
+[% FOREACH domain IN book_res %]
+	[% IF book_res.${domain.key} != 0 %]
+		[% domain.key %] booked for [% book_res.${domain.key} %] years.
+	[% ELSE %]
+		[% domain.key %] not booked as [% book_err.${domain.key} %] .
+	[% END %]
+[% END %]
+</div>

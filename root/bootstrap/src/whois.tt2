@@ -1,0 +1,14 @@
+<div class="row">
+<h2>Who has registered this domain</h2>
+</div>
+<div class="row ">
+<blockquote>
+
+
+             <pre>
+		WhoisRecord: 
+	  [% whois.WhoisRecord.rawText %]
+ 			</pre>
+     </blockquote>
+</div>
+ 

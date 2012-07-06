@@ -1,0 +1,34 @@
+<style>
+.label {
+	background-color: #c2c2c2;
+}
+</style>
+<div class="span4">
+	<div class="row">
+		<h2>Update records</h2>
+	</div>
+	<div class="row well">
+		<blockquote>[% error_message %] [% form %]</blockquote>
+	</div>
+</div>
+<div class="span2 well">
+	<div class="row" style="padding-left: 12px;">
+		<h1>What you get for Free</h1>
+	</div>
+	<div class="row">&nbsp;</div>
+
+	<blockquote>
+		<ul>
+			<li>Free Hosting</li>
+			<li>10 Email Accounts powered by Google</li>
+			<li>Domain Forwarding</li>
+			<li>Privacy Protection</li>
+			<li>Mail Forwarding</li>
+			<li>URL Masking</li>
+			<li>DNS Management</li>
+			<li>Domain Theft Protection</li>
+			<li>Easy-to-use Control Panel</li>
+		</ul>
+	</blockquote>
+
+</div>

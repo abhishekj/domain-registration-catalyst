@@ -1,0 +1,52 @@
+<config>
+<tlds>
+<com><newreg>9.99</newreg><transfer>9.99</transfer><renewal>9.99</renewal></com>
+<in><newreg>2</newreg><transfer>15</transfer><renewal>15</renewal></in>
+<biz><newreg>6</newreg><transfer>9.99</transfer><renewal>9.99</renewal></biz>
+<co.in><newreg>2</newreg><transfer>15</transfer><renewal>15</renewal></co.in>
+<org.in><newreg>2</newreg><transfer>15</transfer><renewal>15</renewal></org.in>
+<asia><newreg>10</newreg><transfer>9.99</transfer><renewal>9.99</renewal></asia>
+<net><newreg>9.99</newreg><transfer>9.99</transfer><renewal>9.99</renewal></net>
+<org><newreg>9.99</newreg><transfer>9.99</transfer><renewal>9.99</renewal></org>
+<info><newreg>9.99</newreg><transfer>9.99</transfer><renewal>9.99</renewal></info>
+<co.uk><newreg>5.99</newreg><transfer>5.99</transfer><renewal>5.99</renewal></co.uk>
+<eu><newreg>7.99</newreg><transfer>7.99</transfer><renewal>7.99</renewal></eu>
+</tlds>
+<name>Dedomart Domain Registration</name>
+<Sandbox>
+<username>209863</username>
+<password>xxxxxxxxx</password>
+<paypalusername>abhish_1332688664_biz_api1.webbee.biz</paypalusername>
+<paypalpassword>1332688689</paypalpassword>
+<paypalsignature>A.KGKwGTJQXZlUb0SZa8Eq9DP9J.AK-7OFWQEg8KnPPuZmp6OuMvRRAL</paypalsignature>
+<paypalurl>www.sandbox</paypalurl>
+<paypalservermode>test</paypalservermode>
+</Sandbox>
+<Live>
+<username>xxxxx</username>
+<password>xxxxxxxxxx</password>
+<paypalusername>xxxxxxxxxxxxxxxxxxxxxxxx</paypalusername>
+<paypalpassword>xxxxxxxxxxxxxxxxxxxxxxxxx</paypalpassword>
+<paypalsignature>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</paypalsignature>
+<paypalurl>www</paypalurl>
+<paypalservermode>live</paypalservermode>
+</Live>
+
+<mode>Live</mode>
+<default_currency>usd</default_currency>
+<nameserver1>ns15.webbee.biz</nameserver1>
+<nameserver2>ns16.webbee.biz</nameserver2>
+<from_email>abhishek@xxxxxxxxx.com</from_email>
+<seo>
+<hosting><title>Dedomart Web Hosting|Cheap Dedicated Web Hosting India|Dedo Hosting Services</title><keywords>Dedo Web Hosting, Cheap Dedicated Web Hosting India, Dedomart Web Hosting, india Web Hosting, Web Hosting in india, India Hosting Services, Hosting</keywords></hosting>
+<join><title>Dedomart Domain Name Registration|Domain Name Registration In India|Cheap Domain Name Registration</title><keywords>Dedomart Domain Name Registration, Dedo Domain Name Registration, India Domain Name Registration,domain name registration in India</keywords></join>
+<pricing_detail><title>Best Domain Prices|Dedomart Domain Prices|India Domain Prices</title><keywords>Dedo Domain Prices, Dedomart Domain Prices, India Domain Prices, Best Domain Prices</keywords></pricing_detail>
+<faq><title>FAQ|Frequently Asked Questions Dedomarts</title><keywords>Frequently Asked Questions domain name, Frequently Asked Questions webhosting, Frequently Asked Questions static and dynamic website</keywords></faq>
+<testimonials><title>Testimonials Dedomart|Client Testimonials</title><keywords>Testimonials Dedomart ,Client Testimonials</keywords></testimonials>
+<about_us><title>About Us Dedomart</title><keywords>About Us Dedomart</keywords></about_us>
+<promotions><title>Current Promotions|Current Offers</title><keywords>Current Promotions|Current Offers</keywords></promotions>
+<default><title>Find your Domain Name |Book A Domain Name With Free Hosting | Buy Affordable Domain Name Registration|Dedomart The Domain Bookers</title><keywords>Find your Domain Name, Book A Domain Name With Free Hosting, Find Domain Names, Buy Domain Name, Cheap Domain Names, Purchase Domain Name, Dedomart The domain bookers, Affordable Domain Name Registration, Domain Name Registration</keywords><desc>Dedomart Provide domain with free hosting and Affordable Domain Name Registration.Dedomart The domain bookers service and offering book a domain name and Website Hosting Services hosting plans,support,quality,reliability and variety.</desc></default>
+</seo>
+<whoisxmlapi><user>xxxxxxxxx</user><pass>xxxxxxxxxx</pass></whoisxmlapi>
+</config>
+

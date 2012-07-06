@@ -1,0 +1,148 @@
+@charset "utf-8";
+.sub-nav-tbl {
+	background: url(../images/sub-nav-bar.png) repeat-x left center;
+}
+.sub-nav-tbl-content {
+	font: 12px/15px Arial, Helvetica, sans-serif;
+	color: #b0b0b0;
+	letter-spacing: 1px;
+	padding: 7px 10px 0px 7px;
+}
+.sub-nav-form-caption {
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #3d3d3d;
+	letter-spacing: 1px;
+	padding-left:7px;
+}
+.sub-nav-input-txt {
+	width: 186px;
+}
+.sub-nav-btn-brdr-bottom{
+	border-bottom:1px;
+	border-bottom-color:#b0b0b0;
+	border-bottom-style:solid;
+}
+
+
+/*	+	footer links	*//* all the links used in the footer */
+
+		a.footer-link:link {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 10px;
+		color: #dedede;
+		text-decoration: none;
+		letter-spacing:1px;
+		}
+		a.footer-link:visited {
+		text-decoration: none;
+		color: #dedede;
+		letter-spacing:1px;
+		}
+		a.footer-link:hover {
+		text-decoration: underline;
+		color: #dedede;
+		letter-spacing:1px;
+		}
+		a.footer-link:active {
+		text-decoration: none;
+		color: #dedede;
+		letter-spacing:1px;
+		}
+		
+/*	-	footer links	*/		
+
+/*	+	sub heading links	*//* all the links used in the footer */
+
+		a.SubHeadingLink:link {
+		font-size: 13px;
+		font-weight: bold;
+		color: #951621;
+		line-height:30px;
+		text-transform:uppercase;
+		letter-spacing:1px;
+		text-decoration:underline;
+		}
+		a.SubHeadingLink:visited {
+		font-size: 13px;
+		font-weight: bold;
+		color: #951621;
+		line-height:30px;
+		text-transform:uppercase;
+		letter-spacing:1px;
+		text-decoration:underline;
+		}
+		a.SubHeadingLink:hover {
+		font-size: 13px;
+		font-weight: bold;
+		color: #3d3d3d;
+		line-height:30px;
+		text-transform:uppercase;
+		letter-spacing:1px;
+		text-decoration:none;
+		}
+		a.SubHeadingLink:active {
+		font-size: 13px;
+		font-weight: bold;
+		color: #951621;
+		line-height:30px;
+		text-transform:uppercase;
+		letter-spacing:1px;
+		text-decoration:underline;
+		}
+		
+/*	-	sub heading links	*/	
+
+
+
+.testimonial-quote {
+	font: italic bold 18px/30px "Times New Roman", Times, serif;
+	color: #7b7b7b;
+	letter-spacing: 1px;
+	text-align: left;
+}
+
+
+
+/*	+	sub heading links	*//* all the links used in the footer */
+
+		a.NavLinks:link {
+		font-size: 12px;
+		color: #951621;
+		line-height:30px;
+		text-transform:uppercase;
+		letter-spacing:1px;
+		text-decoration:none;
+		}
+		a.NavLinks:visited {
+		font-size: 12px;
+		color: #951621;
+		line-height:30px;
+		text-transform:uppercase;
+		letter-spacing:1px;
+		text-decoration:none;
+		}
+		a.NavLinks:hover {
+		font-size: 12px;
+		color: #3d3d3d;
+		line-height:30px;
+		text-transform:uppercase;
+		letter-spacing:1px;
+		text-decoration:underline;
+		}
+		a.NavLinks:active {
+		font-size: 12px;
+		color: #951621;
+		line-height:30px;
+		text-transform:uppercase;
+		letter-spacing:1px;
+		text-decoration:none;
+		}
+		
+/*	-	sub heading links	*/	
+
+.txt-red {
+	font: normal 12px Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #951621;
+	letter-spacing: 1px;
+}

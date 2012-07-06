@@ -1,0 +1,30 @@
+<div class="row">
+<h2>Add Funds</h2>
+</div>
+<div class="row ">
+<blockquote>
+        
+              <table class="table table-striped">
+                  <thead>
+    <tr>
+    <th>Mode</th>
+    <th>Amount (USD)</th>
+    <th>Add</th>
+    </tr>
+    </thead>
+    
+        
+    <tbody>
+    
+        <tr>
+                    <form action="add_funds_paypal" method="post">
+    <td>Paypal</td>
+    <td><input type="text" name="amount" value="[% c.req.params.addfunds %]"></td>
+    <td><input type="submit" value="Add"></td>
+    </form>
+    </tr>
+    
+</tbody>          
+</table>
+    </blockquote>
+</div>

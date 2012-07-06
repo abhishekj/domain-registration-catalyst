@@ -1,0 +1,36 @@
+<div id="main-content-container">
+  <div id="main-content-container-wapper">
+    <div id="content-container">
+      <div id="content-text-sub-container">
+        <table width="694" border="0" cellspacing="0" cellpadding="0">
+           <tr>
+            <td width="694" height="250" align="left" valign="top">
+             <div align="left">
+              <table width="694" border="0" cellpadding="0" cellspacing="0" bgcolor="#e5e5e5" class="brdr-all">
+               <tr>
+                  <td width="100" height="35" class="sub-tbl-inside" nowrap="nowrap"><div align="center">Domain Pricing</div></td>
+                  <td width="250" height="35" class="sub-tbl-inside"><div align="center"></div></td>
+                  <td width="150" height="35" class="sub-tbl-inside"><div align="center"></div></td>
+                  <td width="94" height="35" class="sub-tbl-inside"><div align="center"></div></td>
+                  <td width="100" height="35" class="sub-tbl-inside" nowrap="nowrap"><div align="left">Currency:   USD</div></td>
+                </tr>
+                <tr>
+                  <td width="100" height="35" class="sub-tbl-inside"><div align="center">Domain</div></td>
+                  <td width="250" height="35" class="sub-tbl-inside"><div align="center">New Registration</div></td>
+                  <td width="150" height="35" class="sub-tbl-inside"><div align="center">Renewals</div></td>
+                  <td width="94" height="35" class="sub-tbl-inside"><div align="center">Transfers</div></td>
+                  <td width="100" height="35" class="sub-tbl-inside"><div align="left"></div></td>
+                </tr>
+					[% FOREACH tlds IN c.config.tlds %]
+                  <td width="100" height="30" class="paddL"><div align="center">.[% tlds.key %]</div></td>
+                  <td width="250" height="30" class="paddL" style="cursor:pointer;padding-right:50px" ><div align="center">$ [% c.config.tlds.${tlds.key}.newreg %]</div></td>
+                  <td width="150" height="30" class="paddL"><div align="center">$ [% c.config.tlds.${tlds.key}.renewal %]</div></td>
+                  <td width="94" height="30" class="paddL"><div align="center">$ [% c.config.tlds.${tlds.key}.transfer %]</div></td>
+                  <td width="100" height="30" class="paddL"><div align="left"></div></td>
+                </tr>
+                [% END %]
+                 </table>
+            </div></td>
+          </tr>
+         </table>       
+        </div>

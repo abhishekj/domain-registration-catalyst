@@ -1,0 +1,107 @@
+ <div id="main-content-container">
+  <div id="main-content-container-wapper">
+    <div id="content-container">
+      <div id="content-text-sub-container">
+
+        <table width="694" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="694" height="30" align="left" valign="middle"><div align="left">[% IF c.user_exists == 1 %]You have USD [% c.user.users_balance_usd %] available in your account [% ELSE %] You are not <a href="/login">logged in</a>[% END %]</div></td>
+          </tr>
+          <tr>
+            <td width="694" height="250" align="left" valign="top">
+            [% IF c.session.cart && c.session.cart.size > 0 %]
+            <div align="left">
+              <table width="694" border="0" cellpadding="0" cellspacing="0" bgcolor="#e5e5e5" class="brdr-all">
+                <tr>
+                  <td width="107" height="35" class="sub-tbl-inside"><div align="left">Invoice Date</div></td>
+                  <td width="175" height="35" class="sub-tbl-inside"><div align="left">Particulars</div></td>
+                  <td width="120" height="35" class="sub-tbl-inside"><div align="left">Year</div></td>
+                  <td width="91" class="sub-tbl-inside"><div align="left">Add FREE Hosting</div></td>
+                  <td width="101" height="35" class="sub-tbl-inside"><div align="left"></div></td>
+                  <td width="100" height="35" class="sub-tbl-inside"><div align="left">Total</div></td>
+                  <td width="100" colspan="2" height="35" class="sub-tbl-inside"><div align="left"></div></td>                  
+                </tr>
+                <form action="update" method="post" name="domain_add">
+[% total=0 %]
+		[% FOREACH cart IN c.session.cart %]
+		[% IF c.session.cart.${cart.key}.year %]
+		
+
+<input type="hidden" name="domain" value="[% cart.key %]"> 
+			
+			
+				<tr>
+                  <td width="107" height="30" class="paddL"><div align="left">[% USE date %][% date.format(date.now, '%d %b %y', 'en_GB') %]</div></td>
+                  <td width="175" height="30" class="paddL"><div align="left">[% cart.key %]</div></td>
+                  <td width="120" height="30" class="paddL"><div align="left">
+					
+                  <select name="year_[% cart.key %]">
+				<option value="1" [% IF c.session.cart.${cart.key}.year == 1 %] selected [% END %] >1 Year</option>
+				<option value="2" [% IF c.session.cart.${cart.key}.year == 2 %] selected [% END %] >2 Year</option>
+				<option value="3" [% IF c.session.cart.${cart.key}.year == 3 %] selected [% END %] >3 Year</option>
+				<option value="4" [% IF c.session.cart.${cart.key}.year == 4 %] selected [% END %] >4 Year</option>
+			</select>
+                  
+                  </div></td>
+
+                  <td width="100" height="30" class="paddL"><div align="left"><input type="checkbox" [% IF c.session.cart.${cart.key}.hosting == 'checked' %] checked [% END %] name="hosting_[% cart.key %]" value="yes" /></div></td>
+                  <td width="100" height="30" class="paddL"><div align="left"></div></td> 
+                  <td width="100" height="30" class="paddL" style="cursor:pointer;padding-right:50px" title=" <?php echo $currency_conversion['in']['full'].' '.round($currency_conversion['in']['con'] * $price,0); ?>"><div align="left">
+                  
+				  $ [% dom = [cart.key, c.session.cart.${cart.key}.year ]; dom.getdomprice %][% total=total+dom.getdomprice %]</div></td> 
+                  
+                  <td width="100" height="30" class="paddL"><div align="left"></div></td> 
+                  <td width="100" height="30" class="paddL"><div align="left">                  	
+               <a href="remove?domain=[% cart.key %]">Remove</a> </div>
+                  </td> 
+                </tr>
+  			[% END %]
+			[% END %]
+			
+                 <tr>
+                  <td width="107" height="30" class="paddL"><div align="left"></div></td>
+                  <td width="175" height="30" class="paddL"><div align="left"></div></td>
+    <!--              <td width="120" height="30" class="paddL"><div align="left"></div></td>-->
+                  <td colspan="2"  width="91" height="30" class="paddL"><div align="left"><strong>Service Tax</strong></div></td>
+                  <td width="101" height="30" class="paddL"><div align="left"><strong></strong></div></td>
+                  <td width="100" height="30" class="paddL"><div align="left">Included in Price</div></td>
+                  <td width="100" height="30" class="paddL"><div align="left"></div></td>
+                </tr>  
+                <tr>
+                  <td width="107" height="30" class="paddL"><div align="left"></div></td>
+                  <td width="175" height="30" class="paddL"><div align="left"></div></td>
+<!--                  <td width="120" height="30" class="paddL"><div align="left"></div></td>-->
+                  <td colspan="2" width="91" height="30" class="paddL" nowrap="nowrap"><div align="left"><strong>Total Amount  In USD </strong></div></td>
+                  <td width="101" height="30" class="paddL"><div align="left"><strong></strong></div></td>
+                  <td width="100" height="30" class="paddL"><div align="left">[% total %] </div></td>
+                  <td width="100" height="30" class="paddL" colspan=2><div align="left"></div></td>
+                </tr>                
+                <tr>
+                	<td>&nbsp;</td>
+                </tr>
+                <tr align="right">
+	                 <td colspan="6" align="right"><input type="hidden" name="grand_total" value="<?=($grand_total/$currency_conversion[$cur]['con']);?>" />
+                     <input type="submit" name="update" value="Update" /></td>
+                	<td align="right" >[% IF c.user_exists == 1 && c.user.users_balance_usd >= total %]<input type="submit" name="book" value="Buy Now" onclick="if(confirm('On Clicking yes, the domain(s) will be booked')){document.domain_add.hid.value='book';domain_add.submit();}"/>
+[% ELSIF c.user_exists == 1 && c.user.users_balance_usd < total %]
+<input type="button" name="book" value="Pay Here" onclick="document.domain_add.hid.value='addfunds';domain_add.submit();"/>
+[% ELSE %]
+<a href="/join">Register / Log in to Book</a>
+[% END %]
+<input type="hidden" name="hid" value="add">
+</td>
+	               </tr>
+ <tr>
+                        <td colspan=6>* By Clicking on Buy you agree to the <a href="agreement" target="_blank">Registrar Registrant Agreement for Domain Names</a></td>
+                </tr>
+	
+              </table>
+            </div>
+          [% ELSE %]
+          <div align="left">Shopping Cart is Empty</div>
+          [% END %]
+          </td>
+          </tr>         
+        </table>
+        </form>
+</div>

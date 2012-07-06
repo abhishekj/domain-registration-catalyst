@@ -1,0 +1,92 @@
+<div id="main-content-container">
+  <div id="main-content-container-wapper">
+    <div id="content-container">
+      <div id="content-text-sub-container"><table width="694" border="0" cellpadding="0" cellspacing="0" bgcolor="#e5e5e5" class="brdr-all">
+      <tr>
+            <td height="300" align="left" valign="top" class="paddL"><div align="left">
+              <p class="heading-txt">Frequently Asked Questions</p>
+
+             
+			  <p class="para"><b>What is Web hosting and why do I need Web hosting?</b><br/>
+In order to make your website available to the millions of users on the internet, you need to publish your website on a Web hosting server. This process of publishing a website to make it accessible on the Web is called Web hosting. You can contact us to discuss which Web hosting plan would suit you based on the kind of your website.  
+</p>
+			  <p class="para"><b>What is a domain name?</b><br/>
+A domain name is the text pattern that identifies the address of your website on the Internet. For example, for the DeDoMart website (http://www.dedomart.com), dedomart.com is the domain name. In order to make your website accessible on the Internet, you need to register a domain name first along with hosting your website.
+
+</p>
+              <p class="para"><b>What is the difference between a static and dynamic website?</b><br/>
+A static website contains the Web pages that do not change unless they are changed by the website developer or designer. Their textual content, images, colors, number of pages etc. remain fixed and do not change by users visits.
+<br/>A dynamic website contains the Web pages that may change based on the users inputs or preferences. For example, your web-based e-mail website is a dynamic website because its content keeps on changing when you receive, delete, or reply an e-mail. 
+</p>
+              <p class="para"><b>What is the most basic skill required for creating a Web page?</b><br/>
+
+HTML (Hyper Text Markup Language) is the language that is required for creating a Web page. It is a simple and feature-rich language that is used in almost all the Web pages on the Internet. However, instead of learning HTML, a beginner can use an easy-to-use HTML editor (e.g. MS FrontPage, DreamWeaver etc.) for creating Web pages and websites.
+</p>
+              <p class="para"><b>What are SQL, Java, PHP, Joomla etc. and who requires them? </b><br/>
+They are the technical terms referring to various programming languages, open source software, and databases etc., which are used for building dynamic websites and Web applications. Web developers make use of these technologies for developing various kinds of Web applications. 
+ </p>
+			   <p class="para"><b>Does my hosting package support all of these technologies? </b><br/>Depends on the kind of hosting plan you opted for. Availability of support for the programming languages, databases etc is presented at the time of buying a hosting plan and their limited or extended support is available in several hosting plans. It is solely the customers choice to opt for additional support for the technologies, based on their needs. </p>
+			    <p class="para"><b> What is the meaning of uptime of my hosting account?</b><br/>Uptime is the duration of time for which your website will remain available to access on the Internet. E.g. 99.86% uptime means that your website will not be available for nearly one hour in duration of one month. Good and reputed Web hosting service providers like DeDoMart should be chosen for an exceptional performance and guaranteed uptime. </p>
+				 <p class="para"><b> What is virtual hosting?</b><br/>Virtual hosting (also known as, shared hosting) is the most popular kind of Web hosting on the Web today. In virtual hosting, the server hosting your website can also be actually hosting several other websites without your knowledge. Also, your website will not be affected by any other websites hosting on the shared servers. In reality, you do not get a complete dedicated server; instead you get a virtual server.  </p>
+
+				  <p class="para"><b>  What is dedicated hosting? </b><br/>Dedicated hosting refers to the hosting in which your website is hosted using one completely dedicated server. Dedicated servers are suitable for the websites or Web application that require more processing power and load tolerance or are having very high traffic. In this kind of hosting, all the resources in the dedicated server are utilized for only your website and your website can utilize up to 100% of its resources such as CPU, memory, hard disk, or bandwidth. </p>
+              <p class="para"><b> Can I install as many software on my hosting space as I want? </b><br/>This also depends on the kind of hosting you have bought. For instance, a Linux based hosting plan does not allow you to install Windows specific software. Similarly, you cannot install Linux specific software on the Windows hosting server. Also, the number and types of software you can install also depends upon whether you have a shared hosting, VPS based hosting, or dedicated server. </p>
+			   <p class="para"><b>How can I upload Web pages to my website? </b><br/>Typically, the ways for uploading the Web pages and other content to your website are, FTP and control panels. Using FTP you can login to your hosting account by means of an FTP client, such as WinSCP, CuteFTP etc. You are given the FTP username and other details which you can use for logging into your FTP account and to manage its contents. 
+<br/>Using the hosting control panels, such as cPanel, you can also manage your hosting account quite easily. However, for many users, using FTP is a quicker way since hosting control panels are accessed from within the browsers and FTP involves use of dedicated FTP client software.
+ </p>
+			    <p class="para"><b> Will my domain name remain unaffected if I change my hosting plan or move to another hosting provider? </b><br/> Yes. Your domain name and hosting plan are two separate things. This means that change in either does not affect another service. When you move to another hosting provider, all you need to do is to point your domain to the nameservers provided by the new hosting provider in order to associate your domain name with the new hosting account or hosting provider.</p>
+
+				 <p class="para"><b> Does DeDoMart place any ads on my website? </b><br/> No. DeDoMart does not place any forced advertising on any of your websites that you host with DeDoMart. Although, you are free to place any kinds of advertisements on your websites in case you wish to. DeDoMart completely respects your right on how you want to display your websites to your users.</p>
+             
+            </div>
+                <div align="left"></div>
+              <div align="left"></div>
+              <div align="left"></div>
+              <div align="left"></div>
+              <div align="left"></div>
+
+              <div align="left"></div>
+              <div align="left"></div>
+              <div align="left"></div>
+              <div align="left"></div>
+              <div align="left"></div>
+              <div align="left"></div>
+              <div align="left"></div>
+              <div align="left"></div>
+              <div align="left"></div>
+
+              <div align="left"></div>
+              <div align="left"></div>
+              <div align="left"></div>
+              <div align="left"></div>
+              <div align="left"></div>
+              <div align="left"></div>
+              <div align="left"></div>
+              <div align="left"></div>
+              <div align="left"></div>
+
+              <div align="left"></div>
+              <div align="left"></div>
+              <div align="left"></div>
+              <div align="left"></div>
+              <div align="left"></div>
+              <div align="left"></div>
+              <div align="left"></div>
+              <div align="left"></div>
+              <div align="left"></div>
+
+              <div align="left"></div>
+              <div align="left"></div>
+              <div align="left"></div>
+              <div align="left"></div>
+              <div align="left"></div>
+              <div align="left"></div>
+              <div align="left"></div>
+              <div align="left"></div>
+              <div align="left"></div></td>
+
+          </tr>
+        </table>
+             
+            
+        </div>

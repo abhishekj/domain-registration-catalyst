@@ -1,0 +1,21 @@
+<div id="main-content-container">
+  <div id="main-content-container-wapper">
+    <div id="content-container">
+      <div id="content-text-sub-container">
+
+        
+              <table width="694" border="0" cellpadding="0" cellspacing="0" bgcolor="#e5e5e5" class="brdr-all">
+               <tr>
+                  <td width="100" height="35" class="sub-tbl-inside" nowrap="nowrap"><div align="center">Mode</div></td>
+                  <td width="250" height="35" class="sub-tbl-inside"><div align="center">Amount (USD)</div></td>
+                  <td width="150" height="35" class="sub-tbl-inside"><div align="center">Add</div></td>
+                </tr>
+                <form action="add_funds_paypal" method="post">
+                <tr>
+                  <td width="100" height="35" class="sub-tbl-inside"><div align="center">Paypal</div></td>
+                  <td width="250" height="35" class="sub-tbl-inside"><div align="center"><input type="text" name="amount" value=""></div></td>
+                  <td width="150" height="35" class="sub-tbl-inside"><div align="center"><input type="submit" value="Add"></div></td>
+                </tr>
+                </form>
+</table>
+      </div>

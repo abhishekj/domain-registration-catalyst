@@ -1,0 +1,8 @@
+Hi [% c.user.users_name %],<br />
+Thanks for joining www.dedomart.com .<br />
+Here are your access details:<br />
+Username: [% c.user.users_email %]<br />
+Password: [% c.user.users_pass %]<br />
+<br />
+Thanks,<br />
+Team DedoMart<br />

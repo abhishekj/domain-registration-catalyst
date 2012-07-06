@@ -1,0 +1,131 @@
+<script language="javascript" type="text/javascript">
+function check()
+{
+	if(document.domain_search.domain_name.value == '')
+	{
+	alert("Please Enter Domain Name");
+	document.domain_search.domain_name.focus();
+	return false;
+	}	
+	else
+	{
+	document.domain_search.submit();
+	return true;
+	}
+}
+</script>
+<div id="main-banner-container">
+  <div id="main-banner-container-bg">
+    <div id="main-banner-container-wapper">
+      <div id="call-to-action"><a href="pricing_detail" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image18','','static/images/call-to-action-hover.png',1)"><img src="static/images/call-to-action.png" alt="" name="Image18" width="225" height="31" border="0" id="Image18" /></a></div>
+      <div id="domain-search-form">
+        <form id="domain_search" name="domain_search" method="post" action="search" onSubmit="return check();">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="19" height="19" bgcolor="#F1F1F1">&nbsp;</td>
+              <td width="105" bgcolor="#F1F1F1"><div align="left"></div></td>
+              <td width="236" height="19" bgcolor="#F1F1F1"><label></label></td>
+            </tr>
+            <tr>
+              <td width="19" height="13" bgcolor="#F1F1F1">&nbsp;</td>
+              <td width="105" height="13" bgcolor="#F1F1F1" class="form-caption"><div align="left"><strong>DOMAIN NAME</strong></div></td>
+              <td width="236" height="13" bgcolor="#F1F1F1"><div align="left">
+                  <input name="domain" type="text" class="input-domain-search" id="textfield3" />
+              </div></td>
+            </tr>
+            <tr>
+              <td width="19" height="20" bgcolor="#F1F1F1">&nbsp;</td>
+              <td width="105" height="20" bgcolor="#F1F1F1"><div align="left"></div></td>
+              <td width="236" height="20" bgcolor="#F1F1F1"><label></label></td>
+            </tr>
+            <tr>
+              <td width="19" height="13" bgcolor="#F1F1F1">&nbsp;</td>
+              <td width="105" height="13" bgcolor="#F1F1F1" class="form-caption"><div align="left"><strong>EXTENSION</strong></div></td>
+              <td width="236" height="13" bgcolor="#F1F1F1"><div align="left">
+                  <select name="ext" class="input-extension" id="select">
+						[% FOREACH tlds IN c.config.tlds %]
+                        <option value="[% tlds.key %]">.[% tlds.key %]</option>
+            			[% END %]
+
+                  </select>
+              </div></td>
+            </tr>
+            <tr>
+              <td width="19" height="21" bgcolor="#F1F1F1">&nbsp;</td>
+              <td width="105" height="21" bgcolor="#F1F1F1"><div align="left"></div></td>
+              <td width="236" height="21" bgcolor="#F1F1F1"><div align="left"></div></td>
+            </tr>
+            <tr>
+              <td height="31" bgcolor="#F1F1F1">&nbsp;</td>
+              <td width="105" height="31" bgcolor="#F1F1F1"><div align="left"></div></td>
+              <td width="236" height="31" bgcolor="#F1F1F1"><div align="left"><a href="#" onclick="javascript:return check();" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image16','','static/images/btn-search-hover.png',1)"><input src="static/images/btn-search.png" alt="" type="image" width="150" height="31" border="0" id="Image16" /></a></div></td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- -->
+<div id="main-content-container">
+  <div id="main-content-container-wapper">
+    <div id="content-container">
+      <div id="content-text-container-index">
+        <span class="heading-txt">WELCOME TO DEDOMART</span><br />
+            <span class="sub-heading">Read <a href="faq" class="SubHeadingLink">commonly asked questions</a>. Phone / Email @ +91 120 6495317 / +44 203 286 3232</span><br />
+
+			<p class="para"> </p> 
+            
+                    <p class="para">  A unique and popular online identity is something that can fetch your business the global customers, expose your skills, talents, services and products to the millions of Internet users and can let you earn a respectable brand image. </p>
+        <p class="para"> DeDoMart, being one of the leading hosting service and server solutions providers, offer you a wide array of various services & solutions, such as cheap domain name registrations, Web hosting, managed and unmanaged dedicated hosting, VPS and reseller hosting packages, digital certificates, and various other server solutions. We believe in walking an extra mile to present our customers with services like free Web hosting, cheapest domain names, affordable e-mail hosting and many more. What remains common across all our offerings is, the cheapest prices for almost all the services and the highest quality standards maintained throughout.</p> 
+        <p class="para"> Our devotion to your online success is constantly exhibited by various factors associated with us; the most competitive pricing, exceptional after-sales services and support, innovative utilization of cutting edge technologies, and a never-ending zeal to offer you the best in the class services. DeDoMart continually strives to offer you the best services at the cheapest prices to beat all the budget constraints with the customers.  </p>
+
+      
+	
+	  
+      </div>
+        <br/><br/><br/><br/>	    <br/><br/><br/>
+      <div id="content-seprater"></div>
+      <div id="content-subscribe">
+      <form id="form4" name="form4" method="post" action="subscribe.php?save=y">
+        <table width="287" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="35" colspan="2" align="left" valign="top" class="sub-nav-tbl"><div align="left"><img src="static/images/captio-subscribe.png" width="85" height="34" /></div></td>
+          </tr>
+          <tr>
+            <td height="64" colspan="2" align="left" valign="top" class="sub-nav-tbl-content"><div align="left">Subscribe to our mailing list to receive our exclusive offers and monthly 
+              newsletter</div></td>
+          </tr>
+          
+          <tr>
+            <td width="102" height="22" class="sub-nav-form-caption"><div align="left">EMAIL ID</div></td>
+            <td width="186" height="22" align="left">
+              <div align="left">
+                <input name="email" type="text" class="sub-nav-input-txt" id="textfield4" />
+              </div></td>
+          </tr>
+          <tr>
+            <td width="102" height="20"><div align="left"></div></td>
+            <td width="186" height="20"><div align="left"></div></td>
+          </tr>
+          <tr>
+            <td width="102" height="22"><div align="left"></div></td>
+            <td width="186" height="22"><div align="left"><a onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image17','','static/images/sub-nav-bar-btnSubmit-hover.png',1)"><input type="image" src="static/images/sub-nav-bar-btnSubmit.png" name="Image17" width="76" height="22" border="0" id="Image17" /></a></div></td>
+          </tr>
+          <tr>
+            <td width="102" height="24" class="sub-nav-btn-brdr-bottom"><div align="left"></div></td>
+            <td width="186" height="24" class="sub-nav-btn-brdr-bottom"><div align="left"></div></td>
+          </tr>
+          <tr>
+            <td height="35" colspan="2" align="left" valign="top" class="sub-nav-tbl"><div align="left"><img src="static/images/caption-payment.png" width="139" height="34" /></div></td>
+          </tr>
+          <tr>
+            <td height="82" colspan="2" align="center" valign="middle"><div align="left"><img src="static/images/logo-bank-payment.png" width="287" height="34" /></div></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </div>
+  

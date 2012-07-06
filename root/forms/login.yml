@@ -1,0 +1,55 @@
+---
+# indicator is the field that is used to test for form submission
+indicator: submit
+attributes:
+ class: none
+# Start listing the form elements
+elements:
+    # Another text field for the numeric rating
+    - type: Text
+      name: username
+      label: Email
+      attributes:
+        class: none
+        title: Enter Login name 
+      # Use Filter to clean up the input data
+      # Could use 'NonNumeric' below, but since Filters apply *before*
+      # constraints, it would conflict with the 'Integer' constraint below.
+      # So let's skip this and just use the constraint.
+      #filter:
+        # Remove everything except digits
+        #- NonNumeric
+      # Add constraints to the field
+      constraints:
+        - type: Email
+          message: "Required. Valid Email."
+      container_tag: div
+      del_container_attributes:
+        class: text label
+
+    - type: Password
+      name: password
+      label: Password
+      attributes:
+        title: Enter Password
+
+    # The submit button
+    - type: Submit
+      name: submit
+      value: Submit
+      container_attributes:
+         class: label
+      attributes:
+         class: btn btn-warning btn-large
+
+# Global filters and constraints.
+constraints:
+    # The user cannot leave any fields blank
+    - Required
+    # If not all fields are required, move the Required constraint to the
+    # fields that are
+filter:
+    # Remove whitespace at both ends
+    - TrimEdges
+    # Escape HTML characters for safety
+    - HTMLEscape

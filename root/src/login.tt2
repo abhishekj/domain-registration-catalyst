@@ -1,0 +1,15 @@
+ <div id="main-content-container">
+  <div id="main-content-container-wapper">
+    <div id="content-container">
+      <div id="content-text-sub-container">
+
+      <div style="display: table">
+<div style="display: table-row">
+<div style="display: cell">
+[% error_message %]
+</div>
+</div>
+[% form %]
+</div>
+   
+</div>

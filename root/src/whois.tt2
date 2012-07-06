@@ -1,0 +1,17 @@
+<div id="main-content-container">
+  <div id="main-content-container-wapper">
+    <div id="content-container">
+      <div id="content-text-sub-container">
+        <table width="694" border="0" cellspacing="0" cellpadding="0">
+           <tr>
+            <td width="694" height="250" align="left" valign="top">
+             <div align="left">
+             <pre>
+		WhoisRecord: 
+	  [% whois.WhoisRecord.rawText %]
+ 			</pre>
+  
+            </div></td>
+          </tr>
+         </table>       
+        </div>

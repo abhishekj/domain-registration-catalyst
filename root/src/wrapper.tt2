@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>[% c.config.seo.${c.action}.title || c.config.seo.default.title %]</title>
+<meta name="keyword" content="[% c.config.seo.${c.action}.keywords || c.config.seo.default.keywords %]" />
+<meta name="description" content="[% c.config.seo.${c.action}.desc || c.config.seo.default.desc %]" />
+
+<!-- start google tracking -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-1617381-10");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<!-- end google tracking -->
+<link href="static/styles/master.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color:#d2d2d2;
+}
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align:center;
+}
+.form-caption {	color:#666666;
+	letter-spacing:1px;
+}
+.input-box {	width:139px;
+}
+.input-domain-search {	width:212px;
+	color:#666666;
+}
+.input-extension {	width:166px;
+	height:22px;
+	letter-spacing:1px;
+	color:#666666;
+}
+a.small-link:link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #951621;
+	text-decoration: none;
+	letter-spacing:1px;
+}
+a.small-link:visited {
+	text-decoration: none;
+	color: #951621;
+	letter-spacing:1px;
+}
+a.small-link:hover {
+	text-decoration: underline;
+	color: #951621;
+	letter-spacing:1px;
+}
+a.small-link:active {
+	text-decoration: none;
+	color: #951621;
+	letter-spacing:1px;
+}
+
+.input-box{
+	width:139px;
+}
+
+.input-domain-search{
+	width:212px;
+	color:#666666;
+}
+
+.input-extension{
+	width:166px;
+	height:22px;
+	letter-spacing:1px;
+	color:#666666;
+}
+
+.form-caption{
+	color:#666666;
+	letter-spacing:1px;
+}
+.footer-txt{
+	font-family:Arial, Helvetica, sans-serif;
+	color:#dedede;
+	font-size:11px;
+	letter-spacing:1px;
+	line-height:23px;
+}
+
+.heading-txt{
+	font-size:32px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	color:#951621;
+	letter-spacing:3px;
+
+}
+.para {
+	font-size: 11px;
+	line-height:18px;
+	color:#7e7e7e;
+	text-align:justify;
+	padding:0px 10px 0px 10px;
+}
+
+.sub-heading {
+	font-size: 13px;
+	font-weight: bold;
+	color: #951621;
+	line-height:30px;
+	text-transform:uppercase;
+	letter-spacing:1px;
+}
+-->
+</style>
+
+
+<style>
+.label{
+	display: table-row;
+}
+submit{
+	display: table-row;
+}
+label{
+	display: table-cell;
+}
+.error_message{
+	display: table-cell;
+	align: right;
+	color: red;
+}
+</style>
+
+
+<script src="static/SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<link href="SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body onload="MM_preloadImages('static/images/btn-login-hover.png','static/images/btn-signup-hover.png','static/images/nav-btn-2-hover.png','static/images/nav-btn-3-hover.png','static/images/nav-btn-4-hover.png','static/images/nav-btn-5-hover.png','static/images/btn-more-hover.png','static/images/call-to-action-hover.png','static/images/btn-search-hover.png')">
+
+
+<div id="header-top-strip">
+  <div id="header-top-continer-wapper"></div>
+</div>
+
+
+<div id="header-logo-continer">
+  <div id="header-logo-continer-wapper">
+    <div id="header-logo-content-container">
+      <div id="logo"><img src="static/images/logo.png" alt="" width="246" height="87" /></div>
+     [% IF c.user_exists == 1 %]
+		[% IF c.session.cart %]
+		<span><a href="cart">My Cart</a></span>&nbsp;&nbsp;&nbsp;
+	    [% END %]
+	    
+	      <span>Welcome [% c.user.users_email %] | <a href="myaccount">My Account</a> | <a href="logout">Logout</a></span>
+	  [% ELSE %]
+      <div id="header-login-form">
+
+        <form id="login" name="login" method="post" action="login">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="96" height="40" align="left" class="form-caption">EMAIL</td>
+              <td width="163" height="40" align="left"><label>
+                <input name="username" type="text" class="input-box" id="email" />
+              </label></td>
+              <td width="93" height="40" align="left" class="form-caption">PASSWORD</td>
+              <td width="153" height="40" align="left"><input name="password" type="password" class="input-box" id="password" /></td>
+              <td width="47" height="40" align="left"><input type="image" src="static/images/btn-login.png" width="47" height="22" border="0" id="Image14" name="submiti" style="cursor:pointer"/></td>
+            </tr>
+            <tr>
+              <td height="40" class="form-caption">&nbsp;</td>
+              <td width="163" height="40">&nbsp;</td>
+              <td height="40" colspan="3" class="form-caption"><div align="right">
+                  <table width="197" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="142" height="30"><div align="left"><img src="/static/images/flags/[% c.session.cflag %].png" /><a href="forgot_password" class="small-link">FORGOT PASSWORD?</a></div></td>
+                      <td width="55" height="30"><div align="left"><a  href="join" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image15','','static/images/btn-signup-hover.png',1)"><img src="static/images/btn-signup.png" alt="" name="Image15" width="55" height="22" border="0" id="Image15" style="cursor:pointer" /></a></div></td>
+                    </tr>
+                  </table>
+              </div></td>
+            </tr>
+          </table>
+		<input type="hidden" name="submit" value="submit"/>
+        </form>
+
+        [% END %]		
+      </div>
+    </div>
+  </div>
+</div>
+<div id="header-nav-container">
+  <div id="header-nav-wapper">
+    <div id="navigation-nav-container"><a href="/"><img src="static/images/nav-btn-1.png" width="54" height="48" style="cursor:pointer" border="0"/></a><a href="/" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image19','','static/images/nav-btn-2-hover.png',1)"><img src="static/images/nav-btn-2.png" name="Image19" width="164" height="48" border="0" id="Image19" style="cursor:pointer"/></a><a href="hosting" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image20','','static/images/nav-btn-3-hover.png',1)"><img src="static/images/nav-btn-3.png" name="Image20" width="125" height="48" border="0" id="Image20" /></a><a href="pricing_detail" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image21','','static/images/nav-btn-4-hover.png',1)"><img src="static/images/nav-btn-4.png" name="Image21" width="81" height="48" border="0" id="Image21" /></a><a href="promotions" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image22','','static/images/nav-btn-5-hover.png',1)"><img src="static/images/nav-btn-5.png" name="Image22" width="111" height="48" border="0" id="Image22" /></a></div>
+  </div>
+</div>
+
+[% IF c.action != 'index' %]
+<div id="sub-banner-container"></div>
+
+
+
+  <div id="main-content-container-wapper">
+  <div id="main-content-container">
+[% ELSE %]
+
+
+[% END %]
+
+[% content %]
+[% IF c.action != 'index' %]
+<div id="content-sub-seprater"></div>
+     [% IF c.user_exists == 1 %]
+     [% INCLUDE left_nav.tt2 %]
+     [% ELSE %]
+     [% INCLUDE before_login_left_nav.tt2 %]
+     [% END %]
+</div>
+[% END %]
+
+[% IF c.action != 'index' %] 
+</div>		<p>&nbsp;</p>
+		</div>
+
+[% END %]		
+
+    <div id="testimonial-container">
+      <div id="testimonial-box">
+      <table width="928" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td height="92" colspan="2" align="left" valign="top" class="testimonial-quote">These guys are simply awesome. I sent them my brief, they answered within few hours and one week later they delivered me the best design ever!</td>
+          </tr>
+          <tr>
+            <td width="328" height="31"><div align="left"><a href="testimonials" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image23','','static/images/btn-more-hover.png',1)"><img src="static/images/btn-more.png" name="Image23" width="197" height="31" border="0" id="Image23" /></a></div></td>
+            <td width="600" height="31"><div align="right"><!--<img src="static/images/testimonial-logo.png" width="239" height="26" />--></div></td>
+          </tr>
+        </table>
+
+      
+      </div>
+    </div>
+  </div>
+</div>
+<div id="footer-area">
+  <div id="footer-area-wapper" ><br><br><br><a class="footer-link" href="/">HOME</a> | <a class="footer-link" href="join">REGISTER</a> | <a class="footer-link" href="pricing_detail">PRICING</a> | <a class="footer-link" href="/">SEARCH</a>| <a class="footer-link" href="faq">FAQ</a> | <a class="footer-link" href="testimonials">Testimonials</a> | <a class="footer-link" href="about_us">ABOUT US</a> | <a class="footer-link" href="http://www.webbeeglobal.com/contact" target="_blank">CONTACT US</a> <br><br>© COPYRIGHT 2005 - 2010, WEBBEE ESOLUTIONS PVT. LTD. ALL RIGHT RESERVED. PRIVACY POLICY & TERMS OF USE. VALID XHTML | VALID CSS</div>
+</div>
+</body>
+</html>

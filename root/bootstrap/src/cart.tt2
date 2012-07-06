@@ -1,0 +1,112 @@
+<div class="row">
+	<h2>
+		[% IF c.user_exists == 1 %]You have USD [% c.user.users_balance_usd %]
+		available in your account [% ELSE %] You are not <a href="/login">logged
+			in</a>[% END %]
+	</h2>
+</div>
+<div class="row ">
+	<blockquote>
+
+		[% IF c.session.cart && c.session.cart.size > 0 %]
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>Invoice Date</th>
+					<th>Particulars</th>
+					<th>Year</th>
+					<th>Add FREE Hosting</th>
+					<th>&nbsp;</th>
+					<th>Total</th>
+					<th>&nbsp;</th>
+				</tr>
+			</thead>
+			<tbody>
+				<form action="update" method="post" name="domain_add">
+					[% total=0 %] [% FOREACH cart IN c.session.cart %] [% IF
+					c.session.cart.${cart.key}.year %] <input type="hidden"
+						name="domain" value="[% cart.key %]">
+					<tr>
+						<td>[% USE date %][% date.format(date.now, '%d %b %y',
+							'en_GB') %]</td>
+						<td>[% cart.key %]</td>
+						<td><select name="year_[% cart.key %]" class="input-small">
+						[% IF cart.key.getext == 'co.uk' ||cart.key.getext == 'org.uk' ||cart.key.getext == 'eu' ||cart.key.getext == 'nz' ||cart.key.getext == 'ca' || cart.key.getext == 'ru' %]
+							<option value="2" [% IF c.session.cart.${cart.key}.year==2%] selected [% END %] >2 Year</option>
+						[% ELSE %]
+								<option value="1" [% IF c.session.cart.${cart.key}.year==1%] selected [% END %] >1 Year</option>
+								<option value="2" [% IF c.session.cart.${cart.key}.year==2%] selected [% END %] >2 Year</option>
+								<option value="3" [% IF c.session.cart.${cart.key}.year==3%] selected [% END %] >3 Year</option>
+								<option value="4" [% IF c.session.cart.${cart.key}.year==4%] selected [% END %] >4 Year</option>
+						[% END %]
+						</select></td>
+
+						<td><input type="checkbox" [% IF
+							c.session.cart.${cart.key}.hosting==
+							'checked' %] checked [% END %] name="hosting_[% cart.key %]"
+							value="yes" /></td>
+						<td>&nbsp;</td>
+						<td>$ [% dom = [cart.key, c.session.cart.${cart.key}.year ];
+							dom.getdomprice %][% total=total+dom.getdomprice %]</td>
+						<td><a href="remove?domain=[% cart.key %]">Remove</a></td>
+					</tr>
+					[% END %] [% END %]
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td><strong>Service Tax</strong></td>
+						<td></td>
+						<td></td>
+						<td>Included in Price</td>
+					</tr>
+
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td><strong>Total</strong></td>
+						<td></td>
+						<td>[% total %]</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td><input type="submit" name="update" value="Update" /></td>
+						<td></td>
+						<td>[% IF c.user_exists == 1 && c.user.users_balance_usd >=
+							total %]
+							[% IF c.user.users_customer_id > 0 %]
+							<input type="submit" name="book" value="Buy Now"
+							onclick="if(confirm('On Clicking yes, the domain(s) will be booked')){document.domain_add.hid.value='book';domain_add.submit();}" />
+							[% ELSE %]
+							<a href="/updateaccount"><input type="button" name="book" value="Update Account / Checkout >" ></button></a> 
+							[% END %]
+							[% ELSIF c.user_exists == 1 && c.user.users_balance_usd < total
+							%] 
+							<input type="hidden" name="addfunds" value="[% total - c.user.users_balance_usd %]">
+							<input type="button" name="book" value="Pay Here / Checkout >"
+							onclick="document.domain_add.hid.value='addfunds';domain_add.submit();" />
+							
+							[% ELSE %] <a href="/join">Register / Log in to Book</a> [% END
+							%] <input type="hidden" name="hid" value="add">
+						</td>
+						<td>* By Clicking on Buy you agree to the <a href="agreement"
+							target="_blank">Registrar Registrant Agreement for Domain
+								Names</a>
+						</td>
+					</tr>
+
+					[% ELSE %]
+					<div align="left">Shopping Cart is Empty</div>
+					[% END %]
+			</tbody>
+			</form>
+		</table>
+
+
+
+	</blockquote>
+</div>

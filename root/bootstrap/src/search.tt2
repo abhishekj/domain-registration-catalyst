@@ -1,0 +1,103 @@
+
+<SCRIPT LANGUAGE="JavaScript">
+function check_all(count)
+{	
+	if(document.myform.Check_All.checked==true)
+		{
+			for (i = 1; i < count; i++)
+			{
+				if(document.getElementById('checkbox'+i))
+				{
+				document.getElementById('checkbox'+i).checked = true;
+				}
+			}
+		}	
+		else
+		{
+			for (i = 1; i < count; i++)
+			{
+			 if(document.getElementById('checkbox'+i))
+				{
+				document.getElementById('checkbox'+i).checked = false;
+				}
+			}
+		}
+}
+
+</script>
+
+		<div class="row">
+<h2>Domain Search</h2>
+</div>
+<div class="row ">
+<blockquote>
+
+        <table class="table table-striped">
+                  <thead>
+                  <tr>
+    <th colspan="3"	><form action="add" method="post" name="myform">
+        
+        [% temp = [domreq tldreq];temp = temp.join('.');temp  %]
+        					
+        					[%IF res.searchres.$temp.status == 'a' %]
+        						is Available
+        					[% ELSE %] 
+        					Not Available
+        					[% END %]
+</th>
+    
+    <th><input type="checkbox" name="Check_All"  onClick="return check_all('[% 20 %]');" value="Check_All"/> Check All</th>
+    </tr>
+    </thead>
+    
+        
+    <tbody>
+                                    		[% i = 1 %]
+		[% FOREACH dom IN res.searchres.keys %]
+		
+
+		[% res.searchres.dom %]                                  
+		[% IF res.searchres.$dom.status == 'a' %]
+    
+        <tr>
+    <td><input type="checkbox" name="domain" value="[% dom %]" id="checkbox[% i %]"></td>
+                                      <td width="10" title="Price in Dollars: $ [% domarr = [dom, 1 ]; domarr.getdomprice %]" style="cursor:pointer;padding-right:50px">[% dom  %]</td>
+    <td>$ [% domarr.getdomprice %]</td>
+    
+<td></td>    
+    </tr>
+    		[% ELSE %]
+			
+            
+			<td ><label><img src="static/images/cross.gif" /></label></td>
+                                        <td>[% dom %]</td>
+                                        <td >[% IF c.user_exists == 1 %]<a target="_blank" href="/whois?domain=[% dom %]">WHOIS</a> [% ELSE %] <a href="/login">Login for WHOIS</a> [% END %]</td>								
+                                        <td ></td>
+			
+	  </tr>                  
+  			
+                  [% END %]
+                  [% IF i==0 %]                                  
+                                  
+                                  </tr><tr>
+                                  
+            [% END %]
+           	   [% i = i +1 %] 
+           [% END %]	
+<tr><td colspan="4">
+                           
+                           <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image16','','static/images/cont-domain-hover.png',1)"><input type="image"  src="static/images/cont-domain.png" name="Image16" width="76" height="22" border="0" id="Image16" /></a>
+	
+	</td>
+	</tr>
+	</form>
+    
+</tbody>          
+</table>
+
+        					
+
+		
+</blockquote>
+</div>
+		

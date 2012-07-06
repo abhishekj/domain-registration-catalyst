@@ -1,0 +1,17 @@
+<div class="row">
+<h2>Result</h2>
+</div>
+<div class="row ">
+<blockquote>
+
+
+[% FOREACH domain IN book_res %]
+	[% IF book_res.${domain.key} != 0 %]
+		<strong>[% domain.key %]</strong> booked for <strong>[% book_res.${domain.key} %]</strong> years.<br>
+	[% ELSIF domain.key.year >0 %]
+	[% ELSE %]
+		<strong>[% domain.key %]</strong> not booked as <strong>[% book_err.${domain.key} %]</strong> .<br>
+	[% END %]
+[% END %]
+</blockquote>
+</div>
